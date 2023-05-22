@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>About</title>
+  <style>
+ body {
+      background-color: #f1f1f1;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding-top: 150px;
+    }
+
+    h1 {
+      color: #333;
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+
+    p {
+      color: #666;
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    .highlight {
+      color: #ff9900;
+      font-weight: bold;
+    }
+
+    .navbar {
+      margin-bottom: 30px;
+    }
+
+    .navbar a {
+      color: #333;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+
+    .navbar a:hover {
+      color: #ff9900;
+    }
+  </style>
+</head>
+<body>
+  <div class="navbar">
+    <a href="{% url 'index' %}">Home</a>
+    <a href="{% url 'about' %}">About</a>
+  </div>
+
+  <h1>About Me</h1>
+  <p>Hi, I'm John Doe, a web developer passionate about creating amazing websites.</p>
+  <p>I have several years of experience in front-end development and enjoy working with HTML, CSS, and JavaScript to bring ideas to life.</p>
+  <p>If you're interested in collaborating or have any questions, feel free to <span class="highlight">contact me</span>.</p>
+</body>
+</html>
